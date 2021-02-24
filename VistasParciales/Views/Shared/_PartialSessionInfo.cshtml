@@ -1,0 +1,11 @@
+﻿@{
+    string dato = Context.Session.GetString("HORA");
+}
+@if (dato == null)
+{
+    <li class="nav-link disabled">No hay datos en Session</li>
+}
+else
+{
+    <li class="nav-link disabled">Datos guardados: @dato</li>
+}
