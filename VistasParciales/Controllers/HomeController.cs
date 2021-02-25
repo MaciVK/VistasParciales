@@ -35,6 +35,9 @@ namespace VistasParciales.Controllers
             }
             return View();
         }
-       
+        public IActionResult AutoresGenero(int idgenero)
+        {
+            return View(this.repo.GetAutoresGenero(idgenero));
+        }
     }
 }
